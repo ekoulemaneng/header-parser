@@ -7,7 +7,12 @@ app.use(cors());
 
 app.get('/', (req, res) => res.send("/public/index.html"));
 
-app.get('/api/whoami', (req, res) => res.json({"ipaddress": req.ip, "language": req.get("Accept-Language"), "software": req.get("User-Agent")}));
+app.get('/api/whoami', (req, res) => {
+  let ipadress = req.get("X-Forwarded-For").split(",")[0]; 
+  let languages = req.acceptsLanguages();
+  let user_agent = req.get("User-Agent");
+  res.json({"ipaddress": ipadress, "language": languages, "software": user_agent})
+});
 
 app.use((err, req, res, next) => {
     console.error(err.stack);
