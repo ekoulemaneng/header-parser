@@ -1,0 +1,47 @@
+#main {
+    width: 700px;
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    font-family: sans-serif;
+    margin-bottom: .75rem;
+}
+
+hr {
+    border-width: 1.25px;
+    margin-bottom: .75rem;
+}
+
+table {
+    margin: auto;
+    font-size: 1.15rem;
+}
+
+tr {
+    height: 2rem;
+}
+
+tr>:nth-child(1) {
+    width: 5.5rem;
+}
+
+tr>:nth-child(2) {
+    width: 1.5rem;
+    text-align: center;
+}
+
+td {
+    vertical-align: top;
+}
+
+.bold {
+    font-weight: 700;
+}

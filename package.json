@@ -1,0 +1,19 @@
+{
+  "name": "timestamp",
+  "author": "Ekoulé Maneng Charly Karl",
+  "version": "0.0.1",
+  "description": "Timestamp Microservice",
+  "main": "app.js",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "cors": "^2.8.5"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "engines": {
+    "node": "10.16.1"
+  }
+}
